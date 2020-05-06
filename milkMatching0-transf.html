@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="jspsych-6/jspsych.js"></script>
+    <script src="jspsych-6/plugins/jspsych-html-keyboard-response.js"></script>
+    <script src="jspsych-6/plugins/jspsych-same-different-image.js"></script>
+    <link href="jspsych-6/css/jspsych.css" rel="stylesheet" type="text/css"></link>
+
+    <!-- CHANGE: Loading the external main experiment script -->
+ <script src="milkMatching0-main.js"></script>
+  </head>
+  <body></body>
+<script>
+
+
+  /*start the experiment*/
+  jsPsych.init({
+    timeline: timeline,
+    display_element: 'display_stage',
+    on_finish: function() {
+     jsPsych.data.displayData();
+   }
+  });
+
+
+  </script>
+  </html>
