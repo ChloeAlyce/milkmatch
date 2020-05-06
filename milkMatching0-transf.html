@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>milkmatch</title>
     <script src="jspsych.js"></script>
     <script src="plugins/jspsych-html-keyboard-response.js"></script>
     <script src="plugins/jspsych-same-different-image.js"></script>
@@ -17,7 +17,6 @@
   /*start the experiment*/
   jsPsych.init({
     timeline: timeline,
-    display_element: 'display_stage',
     on_finish: function() {
      jsPsych.data.displayData();
    }
